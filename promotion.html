@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>群馬県観光ポータル - あなたの旅を、もっと楽しく</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Kosugi Maru', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* ヘッダー */
+        .hero {
+            background: linear-gradient(135deg, #667ea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 0.3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ff6b6b;
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        /* コンテナ */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        /* セクションタイトル */
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #667eea;
+        }
+
+        /* 特徴セクション */
+        .features {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: 15px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            flex: 1;
+            min-width: 280px;
+            max-width: 350px;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #764ba2;
+        }
+
+        .feature-card p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* 数字セクション */
+        .stats {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .stats-container {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .stat-item {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* CTA セクション */
+        .cta-section {
+            background: #f8f9fa;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #667eea;
+        }
+
+        /* フッター */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* レスポンシブ */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .features {
+                flex-direction: column;
+            }
+
+            .stat-number {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ヒーローセクション -->
+    <section class="hero">
+        <h1>🏔️ 群馬の魅力を発見しよう！</h1>
+        <p>温泉、絶景、グルメ。あなたの旅を、もっと楽しく。</p>
+        <a href="spot.html" class="cta-button">今すぐ観光地を探す</a>
+    </section>
+
+    <!-- 特徴セクション -->
+    <section class="container">
+        <h2 class="section-title">群馬観光ポータルの3つの特徴</h2>
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">🗾</div>
+                <h3>豊富な観光地情報</h3>
+                <p>草津温泉、伊香保温泉、尾瀬など、群馬が誇る名所を21ヶ所以上掲載。詳細な情報と写真で、行きたい場所が必ず見つかります。</p>
+
+            <div class="feature-card">
+                <div class="feature-icon">🎉</div>
+                <h3>イベント上報満載</h3>
+                <p>お祭り、花火大会、季節のイベントなど、年間20件以上のイベント情報を掲載。旅行の計画に役立つタイムリーな情報をお届けします。</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">⭐</div>
+                <h3>リアルなユーザーレビュー</h3>
+                <p>実際に訪れた人の生の声を38件以上掲載。評価やコメントを参考に、自分にぴったりの観光地を見つけられます。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 統計セクション -->
+    <section class="stats">
+        <h2 style="font-size: 2.5rem; margin-bottom: 40px;">群馬観光を数字で見る</h2>
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-number">21+</div>
+                <div class="stat-label">観光地</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">20+</div>
+                <div class="stat-label">イベント</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">38+</div>
+                <div class="stat-label">レビュー</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">4.5</div>
+                <div class="stat-label">平均評化</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTAセクション -->
+    <section class="cta-section">
+        <h2>さあ、群馬の旅を始めよう！</h2>
+        <p style="font-size: 1.2rem; margin-bottom: 30px; color: #666;">
+            あなたにぴったりの観光地が、きっと見つかります。
+        </p>
+        <a href="spots.html" class="cta-button">観光地一欄を見る</a>
+        <a href="event.html" class="cta-button" style="background: #4ecdc4; margin-left: 15px;">イベント情報を見る</a>
+    </section>
+
+    <!-- フッター -->
+    <footer>
+        <p>&copy; 2025 群馬件観光ポータル</p>
+        <p>
+            <a href="index.html">トップページ</a> |
+            <a href="spots.html">観光地</a> |
+            <a href="events.html">イベント</a> |
+            <a href="stats.html">統計情報</a>
+        </p>
+    </footer>
+</body>
+</html>
